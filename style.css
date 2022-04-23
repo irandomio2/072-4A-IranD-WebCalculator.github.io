@@ -1,0 +1,90 @@
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: vega;
+}
+
+body {
+	background: whitesmoke;
+	height: 637px;
+	background-image: url(asset/Background.jpg);
+	background-size: cover;
+}
+
+.main {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: fixed;
+	background: rgba(0,0,0,0.4);
+	padding: 25px;
+	border-radius: 15px;
+	box-shadow: 0 0 15px;
+	background-color: rgba(6, 6, 6, 0.607);
+}
+
+.main h2 {
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+}
+
+.button {
+	width: 50px;
+	height: 50px;
+	font-size: 25px;
+	margin: 2px;
+	cursor: pointer;
+	border: none;
+	background: #ffffff;
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+	
+}
+
+.btn-green {
+	background:rgb(202, 16, 16);
+	color:#ffffff;
+}
+
+.textarea {
+	width: 204px;
+	margin: 4px;
+	font-size: 20px;
+	padding: 10px;
+	border: none;
+	color: #607d8b;
+	border-radius: 10px;
+	text-align: right;
+}
+
+#videoBG{
+	position: fixed;
+	z-index: -1;
+
+	width: 100%;
+	height: auto;
+}
+
+p{
+	font-family: viga;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+@media(min-aspect-ratio: 16/9){
+	#videoBG{
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media(max-aspect-ratio: 16/9){
+	#videoBG{
+		width: auto;
+		height: 100%;
+	}
+}
